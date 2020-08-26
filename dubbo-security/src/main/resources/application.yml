@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/sercurty_auth?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+  # JPA (JpaBaseConfiguration, HibernateJpaAutoConfiguration)
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update #该配置自动检查实体和数据库表是否一致，如果不一致则会进行更新数据库表，
+    show-sql: true #显示sql语句
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # 选择建表引擎INNODB
+server:
+  port: 8081

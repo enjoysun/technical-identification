@@ -1,0 +1,6 @@
+jwt:
+  tokenHeader: Authorization
+  secret: $2a$10$tVwiKCrBDR68DcpaLqG4LOwGjYiG4cmB1.GhxeXvm0sdYazGDl6Xu
+  expiration: 1200000
+  tokenHead: Bearer
+  routes: {login: /auth/login, refresh: /auth/refresh, client: /auth/login}
